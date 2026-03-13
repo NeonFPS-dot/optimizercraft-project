@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OptimizerCraft - Official Site</title>
+</head>
+<body style="background-color:#0d1117; color:#58a6ff; font-family:sans-serif; text-align:center; padding-top: 50px; margin: 0; overflow-x: hidden;">
 
+    <div id="sidePanel" style="
+        position: fixed;
+        left: -300px; 
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background-color: #000;
+        border-right: 2px solid #58a6ff;
+        transition: 0.5s; 
+        padding: 20px;
+        z-index: 100;
+        text-align: left;">
+        
+        <h2 style="color: #58a6ff;">MENU MODS</h2>
+        <hr style="border: 0.5px solid #30363d;">
+        <p>⚙️ Powerum: <span style="color:lime">ON</span></p>
+        <p>🐎 Ippovagante: <span style="color:lime">ON</span></p>
+        <p>🛡️ Anti-Bullo: <span style="color:red">OFF</span></p>
+        <br>
+        <button onclick="toggleMenu()" style="background: red; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; width: 100%;">CHIUDI MENU</button>
+    </div>
+    <button onclick="toggleMenu()" style="position: fixed; left: 20px; top: 20px; background: #58a6ff; color: black; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-weight: bold; z-index: 50;">
+        ☰ APRI MENU
+    </button>
+
+    <h1 style="font-size: 3.5em; text-shadow: 2px 2px #000;">🛠️ OptimizerCraft 🛠️</h1>
+    <p style="font-size: 1.5em; color: #8b949e;">L'era delle mod ippovaganti è iniziata.</p>
+    
+    <div style="border: 1px solid #30363d; padding: 40px; display: inline-block; border-radius: 15px; background: #161b22; box-shadow: 0 0 20px #58a6ff; margin-top: 20px;">
+        <h3 style="color:white;">STATUS PROGETTO:</h3>
+        <p style="color: #d29922; font-weight:bold;">Powerum Mod: ▓▓░░░░░░░░ 20%</p>
+        <p style="color: #d29922; font-weight:bold;">Mod Ippovagante: ░░░░░░░░░░ 0%</p>
+        <br>
+        <button onclick="alert('OptimizerCraft sta caricando i pacchetti Redbull...')" 
+                style="padding:20px 50px; background:#238636; color:white; border:none; border-radius:8px; cursor:pointer; font-weight:bold; font-size: 1.1em;">
+            SCARICA IL .MRPACK (Alpha)
+        </button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var panel = document.getElementById("sidePanel");
+            if (panel.style.left === "0px") {
+                panel.style.left = "-300px"; 
+            } else {
+                panel.style.left = "0px"; 
+            }
+        }
+    </script>
+
+</body>
+</html>
